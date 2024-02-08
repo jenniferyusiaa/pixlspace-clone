@@ -1,0 +1,27 @@
+.intro {
+  position: relative;
+  display: block;
+  margin-block: clamp(100px, 25vw, 200px);
+  margin-inline: 50px;
+}
+
+.intro h1 {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  color: var(--grayishBrown);
+  font-size: clamp(60px, 7.5vw, 85px);
+  font-weight: 500;
+  letter-spacing: -5px;
+  word-spacing: 5px;
+}
+
+.intro span {
+  color: var(--shadeOfGray);
+}
+
+@media screen and (max-width: 750px) {
+  .intro h1 {
+    font-size: clamp(40px, 8vw, 60px);
+  }
+}

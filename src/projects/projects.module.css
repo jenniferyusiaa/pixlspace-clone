@@ -1,0 +1,138 @@
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  margin-bottom: 250px;
+  overflow: hidden;
+}
+
+.projectsBg {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+}
+
+.projectsBg h1 {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  font-size: clamp(100px, 16vw, 210px);
+}
+
+.projectsBg span {
+  color: red;
+}
+
+.mainImage {
+  position: relative;
+  display: block;
+  min-height: 300dvh;
+}
+
+.imageContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.imageContainer img {
+  position: relative;
+  object-fit: cover;
+  height: inherit;
+  width: inherit;
+  cursor: pointer;
+  filter: blur(5px);
+  transition: opacity 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+
+.imageContainer img:hover {
+  opacity: 0.7;
+  transition: opacity 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+
+.denomination {
+  top: 0;
+  left: 50%;
+  height: clamp(150px, 20vw, 300px);
+  width: clamp(250px, 35vw, 500px);
+}
+
+.plague {
+  top: 20%;
+  left: 10%;
+  height: clamp(250px, 25vw, 400px);
+  width: clamp(300px, 35vw, 650px);
+}
+
+.faction {
+  top: 35%;
+  left: 55%;
+  height: clamp(200px, 30vw, 350px);
+  width: clamp(250px, 35vw, 450px);
+}
+
+.corridor {
+  top: 45%;
+  left: 5%;
+  height: clamp(250px, 35vw, 450px);
+  width: clamp(250px, 30vw, 400px);
+}
+
+.flame {
+  top: 45%;
+  left: 60%;
+  height: clamp(250px, 30vw, 400px);
+  width: clamp(250px, 35vw, 500px);
+}
+
+.citylights {
+  top: 50%;
+  left: 10%;
+  height: clamp(250px, 30vw, 400px);
+  width: clamp(250px, 35vw, 500px);
+}
+
+.scriptures {
+  top: 60%;
+  left: 50%;
+  height: clamp(300px, 40vw, 550px);
+  width: clamp(300px, 40vw, 550px);
+}
+
+.abandoned {
+  top: 80%;
+  left: 20%;
+  height: clamp(250px, 30vw, 400px);
+  width: clamp(250px, 35vw, 500px);
+}
+
+.title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h4 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.title p {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 750px) {
+  .projectsBg h1 {
+    font-size: clamp(60px, 10vw, 110px);
+  }
+}
